@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 def rowexchange(a):
     """"Checks for Non zero elements along the diagonal does row exchanges accordingly"""
@@ -71,22 +65,3 @@ print(a)
 print("Row echelon form of the given matrix is: ")
 gausselimination(a)
 print("############################################")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
