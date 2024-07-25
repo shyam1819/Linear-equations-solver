@@ -11,9 +11,9 @@ def rowexchange(a):
         a[0]=d
         a[i]=c
         i+=1
-    d=elemination(a)
+    d=elimination(a)
     return d
-def elemination(a):
+def elimination(a):
     """ Once rows are exchanged, this function produces an upper triangular matrix"""
     for i in range(1,a.shape[0]):
         b=a[i][0]/a[0][0]
@@ -29,7 +29,7 @@ def gausselimination(a):
     X=backsubstitution(a)
     return X
 def backsubstitution(a):
-    """" The Reduced Row echelon form is then back substituted to get the solution. this will do the back sunstitution and prints the answer"""
+    """" The Reduced Row echelon form is then back substituted to get the solution. this will do the back substitution and prints the answer"""
     b=a[:,-1]
     n = b.size
     x = np.zeros_like(b)
